@@ -1,6 +1,14 @@
-body {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: var(--primary) ;
 }
+
+body {
+  font-size: 1.250rem;
+  font-family: sans-serif;
+
+  background: var(--gray-900);
+  color: var(--text-default);
+}
+
