@@ -18,6 +18,8 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 2.4rem;
+  margin: 0 auto;
+  width: clamp(8rem, 100%, 32rem);
 }
 
 .formRow {
