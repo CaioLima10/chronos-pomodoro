@@ -1,0 +1,47 @@
+.containerCycles{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.cyclesDots {
+  display: flex;
+  width: 100%;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.cycleDot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.cycleDot::before{
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--warning);
+}
+
+.workTime::before {
+  background-color: var(--warning);
+}
+.shortBreakTime::before {
+  background-color: var(--success);
+}
+.shortLongTime::before {
+  background-color: var(--info);
+}
+
+.cycleDot:hover::before{
+  cursor: pointer;
+  width: 2.1rem;
+  height: 2.1rem;  
+  transition: all 0.1s ease-in-out;
+}

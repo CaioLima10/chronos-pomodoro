@@ -6,6 +6,10 @@ import { Logo } from "./components/logo";
 import { Menu } from "./components/menu";
 import { CountDown } from "./components/countDown";
 import { DefaultInput } from "./components/defaultInput";
+import { Cycles } from "./components/cycles";
+import { DefualtButton } from "./components/defualtButton";
+
+import { IoPlayCircleOutline } from "react-icons/io5";
 
 export function App() {
   return (
@@ -37,13 +41,13 @@ export function App() {
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
 
-          <div className="formRow">
-            <p>Ciclos</p>
-            <p>0 0 0 0 0</p>
-          </div>
+          <Cycles />
 
           <div className="formRow">
-            <button>Enviar</button>
+            <DefualtButton
+              type="submit"
+              icon={<IoPlayCircleOutline size={40} />}
+            />
           </div>
         </form>
       </Container>
