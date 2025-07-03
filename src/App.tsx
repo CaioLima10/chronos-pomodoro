@@ -10,6 +10,7 @@ import { Cycles } from "./components/cycles";
 import { DefualtButton } from "./components/defualtButton";
 
 import { IoPlayCircleOutline } from "react-icons/io5";
+import { Footer } from "./components/footer";
 
 export function App() {
   return (
@@ -50,6 +51,10 @@ export function App() {
             />
           </div>
         </form>
+      </Container>
+
+      <Container>
+        <Footer />
       </Container>
     </>
   );

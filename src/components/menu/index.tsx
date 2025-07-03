@@ -8,16 +8,36 @@ export function Menu() {
   return (
     <Container>
       <nav className={styles.menu}>
-        <a title="Inicio" className={styles.menuLink} href="#">
+        <a
+          title="Inicio"
+          aria-label="Ir para o Inicio"
+          className={styles.menuLink}
+          href="#"
+        >
           <LuHouse size={40} />
         </a>
-        <a title="Historico" className={styles.menuLink} href="#">
+        <a
+          title="Historico"
+          aria-label="Ir para o Historico"
+          className={styles.menuLink}
+          href="#"
+        >
           <RiHistoryFill size={40} />
         </a>
-        <a title="Configuração" className={styles.menuLink} href="#">
+        <a
+          title="Configurações"
+          aria-label="Ir para as Configurações"
+          className={styles.menuLink}
+          href="#"
+        >
           <LuSettings size={40} />
         </a>
-        <a title="Tema" className={styles.menuLink} href="#">
+        <a
+          title="Tema"
+          aria-label="Escolha o tema do seu Pomodoro"
+          className={styles.menuLink}
+          href="#"
+        >
           <LuSun size={40} />
         </a>
       </nav>
